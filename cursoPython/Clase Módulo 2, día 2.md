@@ -264,7 +264,5 @@ if intentos == 0:
     print("🔒 Cuenta bloqueada")
 ```
 
----
 
-¿Quieres que te lo deje listo en formato `.md` descargable para subir directamente a GitHub (como hiciste con el “Módulo 1”)?
 
