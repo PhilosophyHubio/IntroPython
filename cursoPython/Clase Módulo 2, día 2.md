@@ -22,7 +22,7 @@ Los **operadores relacionales** comparan dos valores y devuelven un resultado bo
 | `>=`     | Mayor o igual que | `5 >= 5` | `True`    |
 | `<=`     | Menor o igual que | `4 <= 6` | `True`    |
 
-**💻 Ejemplo práctico:**
+**Ejemplo práctico:**
 
 ```python
 a = 10
@@ -46,7 +46,7 @@ Los principales son:
 | `or`     | Verdadero si al menos una condición lo es | `(5 < 2) or (3 < 4)`  | `True`    |
 | `not`    | Invierte el valor lógico                  | `not(5 > 2)`          | `False`   |
 
-**💻 Ejercicio 2:**
+**Ejercicio 2:**
 
 ```python
 x = 7
@@ -63,17 +63,17 @@ print(not(x == 7))
 
 Las sentencias condicionales permiten que el programa tome decisiones.
 
-**💻 Ejercicio 3:**
+**Ejercicio 3:**
 
 ```python
 calificacion = int(input("Ingresa tu calificación: "))
 
 if calificacion >= 90:
-    print("Excelente 😃")
+    print("Excelente")
 elif calificacion >= 70:
-    print("Aprobado 👍")
+    print("Aprobado")
 else:
-    print("Reprobado 😢")
+    print("Reprobado")
 ```
 
 ---
@@ -82,7 +82,7 @@ else:
 
 El usuario ingresa su edad y el programa determina si puede entrar a una fiesta.
 
-**💻 Código:**
+**Código:**
 
 ```python
 edad = int(input("Ingresa tu edad: "))
@@ -103,7 +103,7 @@ else:
 
 Se usa cuando se conoce la cantidad de repeticiones.
 
-**💻 Ejemplo:**
+**Ejemplo:**
 
 ```python
 for i in range(5):
@@ -116,7 +116,7 @@ for i in range(5):
 
 Se usa cuando no se sabe cuántas veces se repetirá el bloque.
 
-**💻 Ejemplo:**
+**Ejemplo:**
 
 ```python
 contador = 0
@@ -131,7 +131,7 @@ while contador < 5:
 
 La función `range(inicio, fin, paso)` genera una secuencia de números.
 
-**💻 Ejercicio 4:**
+**Ejercicio 4:**
 
 ```python
 for i in range(2, 11, 2):
@@ -146,7 +146,7 @@ for i in range(2, 11, 2):
 
 Interrumpe un ciclo antes de que termine.
 
-**💻 Ejercicio 5:**
+**Ejercicio 5:**
 
 ```python
 for i in range(10):
@@ -162,7 +162,7 @@ print("Ciclo detenido en i =", i)
 
 Salta la iteración actual y continúa con la siguiente.
 
-**💻 Ejercicio 6:**
+**Ejercicio 6:**
 
 ```python
 for i in range(10):
@@ -179,7 +179,7 @@ for i in range(10):
 
 El usuario tiene tres intentos para ingresar la contraseña correcta.
 
-**💻 Código:**
+**Código:**
 
 ```python
 contraseña = "python123"
@@ -188,14 +188,14 @@ intentos = 3
 while intentos > 0:
     ingreso = input("Introduce la contraseña: ")
     if ingreso == contraseña:
-        print("✅ Acceso concedido")
+        print("Acceso concedido")
         break
     else:
         intentos -= 1
-        print(f"❌ Contraseña incorrecta. Intentos restantes: {intentos}")
+        print(f"Contraseña incorrecta. Intentos restantes: {intentos}")
 
 if intentos == 0:
-    print("🔒 Acceso bloqueado")
+    print("Acceso bloqueado")
 ```
 
 ---
@@ -214,7 +214,7 @@ Desarrolla un programa que simule un cajero automático simple.
    * Retirar dinero
    * Salir
 
-**💻 Código sugerido:**
+**Código sugerido:**
 
 ```python
 pin_correcto = "1234"
@@ -224,7 +224,7 @@ saldo = 1000
 while intentos > 0:
     pin = input("Introduce tu PIN de 4 dígitos: ")
     if pin == pin_correcto:
-        print("\n✅ Acceso concedido\n")
+        print("\n Acceso concedido\n")
         while True:
             print("Menú principal:")
             print("1. Consultar saldo")
@@ -245,23 +245,23 @@ while intentos > 0:
             elif opcion == "3":
                 retiro = float(input("Cantidad a retirar: $"))
                 if retiro > saldo:
-                    print("❌ Fondos insuficientes.\n")
+                    print("Fondos insuficientes.\n")
                 else:
                     saldo -= retiro
                     print(f"Retiro exitoso. Saldo actual: ${saldo}\n")
 
             elif opcion == "4":
-                print("👋 Gracias por usar el cajero.")
+                print("Gracias por usar el cajero.")
                 break
             else:
-                print("⚠️ Opción inválida, intenta nuevamente.\n")
+                print("Opción inválida, intenta nuevamente.\n")
         break
     else:
         intentos -= 1
-        print(f"❌ PIN incorrecto. Intentos restantes: {intentos}\n")
+        print(f"PIN incorrecto. Intentos restantes: {intentos}\n")
 
 if intentos == 0:
-    print("🔒 Cuenta bloqueada")
+    print("Cuenta bloqueada")
 ```
 
 
